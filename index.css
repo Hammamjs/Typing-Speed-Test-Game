@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width : 767px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width : 992px) {
+    .container {
+        width: 950px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+.game {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #DDD;
+}
+
+.game .name {
+    padding: 15px;
+    text-align: center;
+    background-color: #0f6dfb;
+    font-size: 30px;
+    color: white;
+    margin: 10px 0;
+}
+
+.game .choice {
+    position: absolute;
+    border-width: 10px;
+    border-color: #FFF transparent transparent transparent;
+    border-style: solid;
+    width: 10px;
+    top: 120px;
+    cursor: pointer;
+    left: 150px;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+
+@media (max-width : 991px) {
+    .game .choice {
+        top: 119px;
+        left: 90px;
+    }
+}
+
+@media (max-width : 767px) {
+    .game .choice {
+    top: 144px;
+    left: 35px;
+    }
+}
+
+.game .choice .levels {
+    position: absolute;
+    width: 200px;
+    background-color: #258bff;
+    padding: 15px;
+    text-align: start;
+    display: none;
+}
+
+.game .choice .levels li a {
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 0px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.game .choice .levels li a:hover, 
+.game .choice .levels li a.active {
+    background-color: #E91E61;
+    padding-left: 10px;
+}
+
+.game .message {
+    padding: 15px;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    font-size: 20px;
+}
+
+.game .start {
+    text-align: center;
+    background-color: #009688;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+}
+
+.game .words {
+    padding: 15px;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    width: fit-content;
+    font-weight: bold;
+    margin: 0 auto;
+    background-color: #0f6dfb;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+
+.game input {
+    padding: 15px 25px;
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    outline: 1px solid #0f6dfb;
+    font-size: 25px;
+    font-weight: normal;
+    color: #0f6dfb;
+}
+
+
+
+.game .upcoming-words {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.game .upcoming-words div {
+    background-color: #0f6dfb;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.game .control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+
+.game .control .time span {
+    color: red;
+}
+
+.game .control .score span {
+    color: #0f6dfb;
+    font-size: 15px;
+}
+
+.bad {
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+}
+
+.good {
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0f6dfb;
+    background-color: white;
+}
